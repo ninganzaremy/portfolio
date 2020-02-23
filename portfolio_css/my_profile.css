@@ -1,0 +1,329 @@
+/*40. Start my_profile Hero Area
+================================*/
+.my_profile-hero-area-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.my_profile-hero-area-wrapper:before {
+    background-color: rgba(34, 34, 34, 0.4);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.single-my_profile-name h2 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 1;
+}
+
+#remy{
+    flex-wrap:nowrap;
+}
+
+#test{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#test3{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#test1{
+    text-align:center;
+}
+
+
+#cent{
+
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all .15s;
+    text-align: center;
+
+}
+#view{  text-align: center;
+    margin: 2px;
+    padding: 8px 8px;
+    border-radius: 0;
+    border-width: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display:inline-block;
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    .single-my_profile-name h2 {
+        font-size: 30px;
+    }
+}
+
+.single-my_profile-name .profile-title {
+    color: #fdc657;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .single-my_profile-name .profile-title {
+        font-size: 16px;
+    }
+}
+
+.name-divider {
+    color: #fff;
+    font-size: 88px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+    margin: -10px 15px 0;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .name-divider {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+}
+
+.my_profile-hero-content {
+    color: #fff;
+    font-weight: 500;
+}
+
+.my_profile-hero-content .hero-desc {
+    max-width: 50%;
+    margin: 40px auto auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .my_profile-hero-content .hero-desc {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .my_profile-hero-content .hero-desc {
+        max-width: 100%;
+        margin: 15px auto auto;
+    }
+}
+
+.mouse-wheel {
+    border: 1px solid #fdc657;
+    border-radius: 50px;
+    display: block;
+    height: 40px;
+    width: 20px;
+    position:sticky;
+    bottom: 10px;
+    left: 49%;
+    margin-left: -15px;
+
+}
+
+@media only screen and (max-width: 767.98px) {
+    .mouse-wheel {
+        height: 40px;
+        width: 20px;
+        bottom: 10px;
+    }
+}
+
+.mouse-wheel:before {
+    background-color: #fdc657;
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 5px;
+    display: block;
+    height: 10px;
+    width: 4px;
+    -webkit-animation: drop 1.5s infinite;
+    animation: drop 1.5s infinite;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    33.33% {
+        top: 15px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 30px;
+        opacity: 0;
+    }
+}
+
+@keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+
+    33.33% {
+        top: 15px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 30px;
+        opacity: 0;
+    }
+}
+
+/*==================================
+Start my_profile Skills Area
+=====================================*/
+.my_profile-skills-area {
+    padding: 120px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .my_profile-skills-area {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .my_profile-skills-area {
+        padding: 60px 0;
+    }
+}
+
+.my_profile-info h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .my_profile-info h2 {
+        font-size: 30px;
+    }
+}
+
+.my_profile-info h5 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*
+  my_profile Home Page Style (index-my_profile.html
+
+*/
+.my_profile-hero-area {
+    padding: 150px 0 0;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .my_profile-hero-area {
+        padding: 80px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .my_profile-hero-area {
+        padding: 60px 0 0;
+    }
+}
+
+.my_profile-hero-area .mouse-wheel {
+    border-color: #fdc657;
+    bottom: 1px;
+}
+
+.
+-hero-area .mouse-wheel:before {
+    background-color: #fdc657;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .my_profile-hero-area .mouse-wheel {
+        bottom: 30px;
+    }
+}
+
+.profile-hero-content {
+    margin-top: 150px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .profile-hero-content {
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .profile-hero-content {
+        margin-top: 60px;
+    }
+}
+
+.profile-hero-content h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .profile-hero-content h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .profile-hero-content h2 {
+        font-size: 25px;
+    }
+}
+
+.profile-hero-content h4 {
+    color: #fcb525;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .profile-hero-content h4 {
+        font-size: 20px;
+    }
+}
+
+.profile-hero-content .btn {
+    padding: 15px 60px;
+    margin-top: 20px;
+}
+
+.profile-about-content {
+    line-height: 2;
+    padding: 30px;
+    margin-top: 2em;
+}
+
+.mtn-30 {
+    margin-top: -30px;
+}
