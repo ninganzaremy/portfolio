@@ -17,7 +17,10 @@
 .cd-timeline-block:last-child {
     padding-bottom: 0;
 }
-
+#experience .col-lg-8{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 @media only screen and (min-width: 1200px) {
     .cd-timeline-block:last-child:before {
         display: none;
@@ -96,7 +99,7 @@ only screen and (max-width: 767.98px) {
 
 @media only screen and (max-width: 767.98px) {
     .cd-timeline-content {
-        
+
     }
 }
 

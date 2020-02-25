@@ -39,10 +39,8 @@
     opacity: 0;
     visibility: hidden;
 }
-#caption{
+#portfolios .mdl-card__actions{
     background-color:#666666;
-}
-#caption {
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
@@ -52,43 +50,43 @@
     padding: 8px;
     line-height: normal;
     width: 100%;
-
 }
 
-#caption a:hover{
+
+#portfolios .mdl-card__actions a:hover{
     background-color: transparent;
     color: #fdc657;
     border-radius: 15px
 
 }
-#caption i:hover{
+#portfolios .mdl-card__actions i:hover{
     background-color: transparent;
     color: #fdc657;
     border-radius: 15px
 
 }
 
-#caption a{
+#portfolios .mdl-card__actions a{
     color: white;
 
 }
-#caption .icon-button{
+#portfolios .mdl-card__actions .icon-button{
     color:white;
     font-size: 36px;
 }
-#caption a.view-work:hover i.good {
+#portfolios .mdl-card__actions a.view-work:hover i.good {
     padding-left: 4px;
 }
-#caption a.view-work i.good{
+#portfolios .mdl-card__actions a.view-work i.good{
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
 }
-#caption .mdl-button{
+#portfolios .mdl-card__actions .mdl-button{
     padding: 0 8px;
 }
 
-#hove.container2 {
+#portfolios .hove.container2 {
   position: absolute;
   width: 50%;
 }

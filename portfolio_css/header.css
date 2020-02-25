@@ -52,7 +52,7 @@ only screen and (max-width: 767.98px) {
     align-items: center;
 
 }
-#navigation1 :hover{
+.main-menu :hover{
 font-size: .9rem;
 font-weight: 700;
 text-transform: uppercase;
@@ -146,7 +146,7 @@ only screen and (max-width: 767.98px) {
 .sticky-header.sticky .logo-wrap img.sticky-logo {
     display: inline-block;
 }
-#logo_width .logo-wrap .sticky-logo{
+.sticky-logo{
     width: auto;
 }
 

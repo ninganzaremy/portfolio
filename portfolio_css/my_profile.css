@@ -21,11 +21,11 @@
     line-height: 1;
 }
 
-#remy{
+#top .row{
     flex-wrap:nowrap;
 }
 
-#test{
+#about-area .col-lg-6{
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -33,7 +33,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-#test1{
+#about-area .section-title-wrap {
     text-align:center;
 }
 
