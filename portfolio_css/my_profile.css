@@ -242,14 +242,22 @@ Start my_profile Skills Area
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .my_profile-hero-area {
-        padding: 80px 0 0;
+        padding: 120px 0 0;
+        height: 100vh;
     }
 }
 
 @media only screen and (max-width: 767.98px) {
     .my_profile-hero-area {
-        padding: 60px 0 0;
+        padding: 100px 0 0;
+        height: 100vh;
     }
+}
+@media (min-width: 992px){
+.my_profile-hero-area {
+    padding: 150px 0 0;
+    height: 100vh;
+  }
 }
 
 .my_profile-hero-area .mouse-wheel {
@@ -257,8 +265,7 @@ Start my_profile Skills Area
     bottom: 1px;
 }
 
-.
--hero-area .mouse-wheel:before {
+.my_profile-hero-hero-area .mouse-wheel:before {
     background-color: #fdc657;
 }
 
