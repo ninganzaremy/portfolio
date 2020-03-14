@@ -334,10 +334,12 @@
           Lading Page Smooth Scroll
         ======================================*/
         $(".landing-nav li a, .slicknav_nav li a").smoothScroll({
-            speed: 0,
-            offset: 0
-        });
-
+           speed: 0,
+           offset: 0,
+           afterScroll: ()=>{
+               $(".off-canvas-responsive-menu").removeClass('show');
+           }
+       });
 
         /*=====================================
           Match Height Js
