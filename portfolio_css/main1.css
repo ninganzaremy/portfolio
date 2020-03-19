@@ -1,8 +1,7 @@
-
+@import "css/plugins.css";
 @import url('https://storage.googleapis.com/code.getmdl.io/1.1.3/material.grey-orange.min.css');
 @import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.css');
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
-@import "css/plugins.css";
 @import "css/vendor.css";
 @import "header.css";
 @import "my_profile.css";
