@@ -1,0 +1,114 @@
+/*========================
+Skills-section Area
+=========================*/
+
+#skills-section .title {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+#skills-section .title .circle {
+	background: #eef9ff;
+	width: 170px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: 23px;
+}
+
+#skills-section .title h1 {
+	position: relative;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #16171b;
+	/* z-index: 1; */
+	letter-spacing: 4px;
+}
+
+.section-skills-area .row,
+.section-skills-area .header-content-wrap {
+	margin: 0 -15px;
+}
+
+.section-skills-area .row .column,
+.section-skills-area .header-content-wrap .column {
+	-webkit-flex-basis: 50%;
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	max-width: 50%;
+	padding: 0 15px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	.section-skills-area .row .column,
+	.section-skills-area .header-content-wrap .column {
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+.skills-content {
+	margin-top: -30px;
+}
+
+.skills-content .skills-item {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 30px;
+	margin-top: 30px;
+	padding: 40px;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+.skills-content .skills-item:hover {
+	background-color: #eef9ff;
+	-webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+@media only screen and (max-width: 767.98px) {
+	.skills-content .skills-item {
+		padding: 30px 20px;
+	}
+	.cd-timeline-block {
+		padding: 30px 20px;
+	}
+}
+
+.skills-content .skills-item-icon {
+	color: #222222;
+	line-height: 1;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	.skills-content .skills-item-icon {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.skills-content .skills-item-desc h3 {
+	font-size: 20px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.skills-content .skills-item-desc p:first-child {
+	margin-bottom: 0;
+}

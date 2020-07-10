@@ -1,0 +1,199 @@
+/*======================
+Aboutme-section Area
+=======================*/
+
+#aboutme-section {
+	padding: 140px 0;
+}
+
+#aboutme-section .title {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+#aboutme-section .title .circle {
+	background: #eef9ff;
+	width: 170px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: 23px;
+}
+
+#aboutme-section .title h1 {
+	position: relative;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #16171b;
+	/* z-index: 1; */
+	letter-spacing: 4px;
+}
+
+#aboutme-section .aboutme-container {
+	display: grid;
+	grid-template-rows: 76% 24%;
+	grid-gap: 15px;
+}
+#aboutme-section .aboutme-container .resume {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	grid-gap: 20px;
+	justify-content: center;
+}
+#aboutme-section .aboutme-container .test-center {
+	background: white;
+	padding: 40px;
+}
+
+#aboutme-section .aboutme-container .test-center:hover {
+	background-color: #eef9ff;
+	-webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+#aboutme-section .aboutme-container .test-center .header {
+	display: flex;
+	padding-bottom: 50px;
+}
+
+#aboutme-section .aboutme-container .test-center .header .user-img {
+	width: 150px;
+	height: 150px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#aboutme-section .aboutme-container .test-center .header .user-img img {
+	width: 100%;
+}
+
+#aboutme-section .aboutme-container .test-center .header .info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 40px;
+}
+
+#aboutme-section .aboutme-container .test-center .header .info h4 {
+	color: #13161d;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 1rem;
+}
+
+#aboutme-section .aboutme-container .test-center .header .info span {
+	color: #929294;
+	font-weight: 400;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+#aboutme-section .aboutme-container .test-center p {
+	color: #222222;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	display: block;
+	line-height: 1.5;
+}
+
+#aboutme-section .aboutme-container .test-sides {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutme-section .aboutme-container .test-sides .person-img {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #f2f3f5;
+	height: 80%;
+	width: 100%;
+}
+
+#aboutme-section .aboutme-container .test-sides .person-img .hover-bg .test {
+	background: #222;
+	height: 100%;
+	color: #fff;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+#aboutme-section .aboutme-container .test-sides .person-img a {
+	font-weight: 700;
+	color: #f4f4f4;
+	background: #16171b;
+	font-size: 1.5rem;
+	padding: 1.5rem;
+	transition: all 0.2s ease-in-out 0.2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+#aboutme-section .aboutme-container .test-sides .person-img a:hover {
+	background: #52b8ff;
+	transition: all 0.2s ease-in-out 0.1s;
+
+	color: #16171b;
+	transform: translate3d(0, 0, 0);
+	display: flex;
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 960px) {
+	#aboutme-section .aboutme-container {
+		display: grid;
+		grid-template-rows: 76% 24%;
+		grid-gap: 10px;
+	}
+}
+
+/* Phones */
+
+@media only screen and (max-width: 767px) {
+	#aboutme-section .aboutme-container {
+		display: grid;
+		grid-template-rows: 120px 1fr;
+		grid-gap: 0;
+	}
+	#aboutme-section .aboutme-container .resume {
+		grid-template-columns: 45% 45%;
+		grid-gap: 10%;
+	}
+	#aboutme-section .aboutme-container .resume .test-sides.test-left {
+		grid-row: 1 / 2;
+	}
+	#aboutme-section .aboutme-container .resume .test-sides.test-right {
+		grid-row: 1 / 2;
+	}
+	#aboutme-section .aboutme-container .test-center {
+		grid-row: 2 / 3;
+		padding: 20px;
+	}
+	#aboutme-section .aboutme-container .test-center p {
+		font-size: 1rem;
+	}
+}
+
+.section-about-area .row {
+	margin-top: 35px;
+}
+
+.section-about-area {
+	line-height: 2;
+}

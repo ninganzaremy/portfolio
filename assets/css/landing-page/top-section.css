@@ -1,0 +1,221 @@
+/*======================
+Top section  Area
+=======================*/
+#top-section .landing {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+#top-section .developer-hero-content h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #16171b;
+	margin-bottom: 2rem;
+	/* z-index: 1; */
+}
+
+#top-section .developer-hero-content h4 {
+	position: relative;
+	color: #222222;
+	text-transform: capitalize;
+	margin-bottom: 3rem;
+	/* z-index: 1; */
+}
+
+#top-section .developer-hero-content a {
+	color: #222222;
+	position: relative;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	padding-bottom: 5px;
+
+	/* z-index: 1; */
+	letter-spacing: 2px;
+}
+#top-section .developer-hero-content a:hover {
+	color: #52b8ff;
+}
+.section-padding,
+.section-about-area,
+.section-skills-area,
+.section-portfolio-area,
+.section-experience-area,
+.section-contact-area {
+	padding: 120px 0;
+}
+.section-hero-area {
+	padding: 120px 0 0;
+	position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.section-hero-area {
+		padding: 80px 0 0;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.section-hero-area {
+		padding: 60px 0 0;
+	}
+}
+.section-hero-area .latest {
+	display: block;
+}
+.fa-chevron-down {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.section-hero-area .container .landing .email {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2px;
+	margin-bottom: 3rem;
+}
+.section-hero-area .container .landing .email li a {
+	text-decoration: none;
+}
+.section-hero-area .container .landing .email li a i {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.developer-hero-content {
+	margin-top: 150px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (min-width: 992px) and (max-width: 1199.98px), only screen and (min-width: 1200px) {
+	.developer-hero-content {
+		-webkit-flex-basis: 38.66%;
+		-ms-flex-preferred-size: 38.66%;
+		flex-basis: 38.66%;
+		max-width: 38.66%;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.developer-hero-content {
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.developer-hero-content {
+		margin-top: 150px;
+	}
+	.background-img {
+		margin-top: 50px;
+	}
+}
+
+.developer-hero-content h2 {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.developer-hero-content h2 {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.developer-hero-content h2 {
+		font-size: 2rem;
+	}
+	.developer-hero-content h4 {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 767.98px) {
+	.developer-hero-content h2 {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.developer-hero-content h4 {
+		font-size: 20px;
+	}
+}
+
+.developer-hero-content .btn {
+	/* padding: 15px 30px; */
+	margin-top: 20px;
+}
+
+.background-img {
+	-webkit-flex-basis: 58.333%;
+	-ms-flex-preferred-size: 58.333%;
+	flex-basis: 58.333%;
+	max-width: 58.333%;
+	margin-bottom: -6px;
+}
+
+.background-img {
+	background: url("../../../assets/img/home-developer/moi.webP");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	#top-section .landing .background-img {
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+		margin-top: 20px;
+		height: 80vh;
+	}
+}
+
+@media only screen and (min-width: 767.98px) {
+	.background-img {
+		margin-left: 13%;
+	}
+}
+
+@-webkit-keyframes drop {
+	0% {
+		top: 5px;
+		opacity: 0;
+	}
+	33.33% {
+		top: 15px;
+		opacity: 1;
+	}
+	100% {
+		top: 30px;
+		opacity: 0;
+	}
+}
+
+@keyframes drop {
+	0% {
+		top: 5px;
+		opacity: 0;
+	}
+	33.33% {
+		top: 15px;
+		opacity: 1;
+	}
+	100% {
+		top: 30px;
+		opacity: 0;
+	}
+}

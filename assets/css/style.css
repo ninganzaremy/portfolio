@@ -1,0 +1,433 @@
+@import "landing-page/header-section.css";
+@import "landing-page/top-section.css";
+@import "landing-page/aboutMe-section.css";
+@import "landing-page/skills-section.css";
+@import "landing-page/portfolio-section.css";
+@import "landing-page/experience-section.css";
+@import "landing-page/contact-section.css";
+@import "landing-page/footer-section.css";
+
+/*========================
+Typography Style Start
+=========================*/
+
+html {
+	--scrollbarBG: #dbf1ff;
+	--thumbBG: #52b8ff;
+}
+
+body::-webkit-scrollbar {
+	width: 11px;
+}
+
+body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+	background: #f4f4f4;
+	font-size: 15px;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+	color: #666666;
+	margin: 0;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #52b8ff;
+	outline: none;
+}
+
+p {
+	margin-top: 0;
+}
+
+p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-weight: 700;
+	color: #222222;
+	line-height: 1.3;
+}
+
+h1,
+.h1 {
+	font-size: 36px;
+	margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	h1,
+	.h1 {
+		font-size: 30px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	h2,
+	.h2 {
+		font-size: 28px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767.98px) {
+	h3,
+	.h3 {
+		font-size: 26px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+h5,
+.h5 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 13px;
+}
+
+h6,
+.h6 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 9px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+/* button:active,
+button:focus {
+outline: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+} */
+
+::-moz-selection {
+	color: #fff;
+	background: #52b8ff;
+}
+
+::selection {
+	color: #fff;
+	background: #52b8ff;
+}
+
+/*=======================
+Buttons Style
+=========================*/
+
+.btn-group .btn {
+	margin-right: 20px;
+}
+
+.btn-group .btn:last-child {
+	margin-right: 0;
+}
+
+.btn {
+	border-radius: 0;
+	border-width: 3px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #222222;
+	text-transform: uppercase;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	display: inline-block;
+	padding: 20px 30px;
+}
+
+.btn i {
+	margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
+	.btn {
+		padding: 13px 25px;
+	}
+}
+
+@media only screen and (max-width: 575.98px) {
+	.btn {
+		padding: 10px 15px;
+		font-size: 13px;
+	}
+}
+
+/* .btn:active,
+.btn:focus {
+-webkit-box-shadow: none;
+box-shadow: none;
+outline: none;
+} */
+
+.btn-small {
+	padding: 10px 15px;
+	font-size: 11px;
+}
+
+.btn-brand {
+	/* background-color: #222222; */
+	color: #52b8ff;
+}
+
+.btn-brand:hover {
+	background-color: #52b8ff;
+	color: #222222;
+}
+
+.btn-bordered,
+.btn-black {
+	border: 3px solid #222222;
+}
+
+.btn-bordered:hover,
+.btn-black:hover {
+	border-color: #52b8ff;
+}
+
+.btn-black {
+	background-color: #222222;
+	color: #fff;
+}
+
+.btn-black:hover {
+	background-color: #52b8ff;
+	border-color: #52b8ff;
+	color: #fff;
+}
+
+.btn-offWhite {
+	background-color: #f2f2f2;
+	color: #222222;
+}
+
+.btn-offWhite:hover {
+	background-color: #52b8ff;
+	color: #fff;
+}
+
+.btn-event {
+	border: 2px solid #222222;
+}
+
+.btn-event:hover {
+	background-color: #222222;
+	color: #fff;
+}
+
+.btn-transparent {
+	border: 1px solid #52b8ff;
+}
+
+.btn-transparent:hover {
+	background-color: #52b8ff;
+	color: #fff;
+}
+
+.btn-append i {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.btn-append:hover i {
+	opacity: 1;
+	visibility: visible;
+	padding-right: 10px;
+}
+
+.btn-wishlist {
+	color: #666666;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.btn-wishlist:hover {
+	color: #52b8ff;
+}
+
+.btn-wishlist i {
+	margin-right: 5px;
+}
+
+/*=====================
+
+
+/*
+Classes
+*/
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	.section-padding,
+	.section-about-area,
+	.section-skills-area,
+	.section-portfolio-area,
+	.section-experience-area,
+	.section-contact-area {
+		padding: 80px 0;
+	}
+}
+
+@media only screen and (max-width: 767.98px) {
+	.section-padding,
+	.section-about-area,
+	.section-skills-area,
+	.section-portfolio-area,
+	.section-experience-area,
+	.section-contact-area {
+		padding: 60px 0;
+	}
+}
+
+.form-message {
+	background: #52b8ff;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+}
+
+.form-message.show {
+	display: block;
+}
+
+.form-message .close {
+	color: #fff;
+	font-size: 25px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
